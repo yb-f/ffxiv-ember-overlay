@@ -57,7 +57,7 @@ class HistoryChart extends React.Component {
 			labels   : [],
 			datasets : [],
 		};
-		const player_name = player.name;
+		const player_name = "No";
 		const base_time   = Number(Object.keys(history)[0]);
 		const max_values  = {};
 
