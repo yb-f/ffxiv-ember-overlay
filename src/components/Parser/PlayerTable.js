@@ -150,7 +150,7 @@ class PlayerTable extends React.Component {
 				continue;
 			}
 
-			const blur       = (player_blur && !player._is_current);
+			const blur       = (player_blur);
 			const player_obj = <Player key={"player-component-" + player._name} percent={player._percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} icon_blur={this.props.icon_blur} short_names={short_names} horizontal={this.props.horizontal} detail_data={this.props.detail_data} onClick={this.changeViewing.bind(this, "player", player)}/>;
 
 			if (player._is_pet) {
